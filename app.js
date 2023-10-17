@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect("mongodb://localhost:27017/person", {userNewUrlPaarser: true});
+mongoose.connect("mongodb://127.0.0.1:27017/person", {useNewUrlParser: true});
 
 const personSchema = new mongoose.Schema ({
     name: String,
@@ -14,4 +14,4 @@ const person = new Person ({
     age: 45
 });
 
-person.save;
+person.save();
